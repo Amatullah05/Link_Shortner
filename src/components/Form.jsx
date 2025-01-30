@@ -38,11 +38,12 @@ const Form = () => {
 
       <form className="my-3 w-3/4" onSubmit={handleSubmit}>
         <input
-          type="text"
+          type="link"
           placeholder="Enter URL"
           className="p-4 rounded-l-md w-3/4 focus:outline-none"
           onChange={(e) => setText(e.target.value)}
           value={text}
+          required
         />
         <button className="p-4 rounded-r-md w-1/4 bg-green-700 ">
           <p className="text-white font-extrabold tracking-wider"> Shorten</p>
